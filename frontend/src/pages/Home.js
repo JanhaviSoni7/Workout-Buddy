@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
-require('dotenv').config();
 
 
 //components
