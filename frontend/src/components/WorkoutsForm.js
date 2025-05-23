@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext';
-require('dotenv').config();
 
 
 const WorkoutForm = () => {
