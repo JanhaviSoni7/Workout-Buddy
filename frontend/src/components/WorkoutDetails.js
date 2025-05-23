@@ -1,5 +1,4 @@
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
-require('dotenv').config();
 
 //date fns
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
