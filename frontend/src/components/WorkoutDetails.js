@@ -6,7 +6,7 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 const WorkoutDetails = ({ workout }) => {
     const { dispatch } = useWorkoutsContext();
     const handleClick = async () => {
-        const response = await fetch('${process.env.REACT_APP_API_URL}/api/workouts/' + workout._id, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/workouts/` + workout._id, {
             method: 'DELETE'
         });
 
