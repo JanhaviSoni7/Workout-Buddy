@@ -3,7 +3,7 @@
 
 /*layout*/
 :root {
-  --primary: #44ab46;
+  --primary: #368937;
   --error: #812727;
 }
 body {
@@ -58,7 +58,7 @@ header a {
 
 .workout-details h3 {
   margin: 0 0 10px;
-  color: #22c55e; /* Tailwind green-500 */
+  color: #5bb37b; 
   font-weight: bold;
 }
 
@@ -140,4 +140,35 @@ div.error {
 
 input.error{
   border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+display: flex;
+align-items: center;
+}
+
+nav a {
+margin-left: 10px;
+}
+
+nav button{
+background: #fff;
+border: 2px solid var(--primary);
+color: var(--primary);
+padding: 6px 10px;
+border-radius: 4px;
+font-family: "Poppins";
+cursor: pointer;
+font-size: 1em;
+margin-left: 10px;
+}
+
+/* auth forms */
+form.signup, form.login {
+max-width: 400px;
+margin: 40px auto;
+padding: 20px;
+background: #fff;
+border-radius: 4px;
 }
