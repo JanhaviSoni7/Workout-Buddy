@@ -9,6 +9,7 @@ const WorkoutDetails = ({ workout }) => {
     const { user } = useAuthContext();
 
     const handleClick = async () => {
+<<<<<<< HEAD
         if(!user) {
             return;
         }
@@ -17,6 +18,10 @@ const WorkoutDetails = ({ workout }) => {
             headers: {
                 'Authorization':`Bearer ${user.token}`
             }
+=======
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/workouts/` + workout._id, {
+            method: 'DELETE'
+>>>>>>> 152d1e50377f64bd66bc734bfeb965b674400451
         });
 
         const json = await response.json();
